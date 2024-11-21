@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #d1d0d0;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+button {
+  background: rgb(75, 211, 75);
+  padding: 15px;
+  margin: 2px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  font-size: large;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+  cursor: pointer;
+}
+
+h1,
+form {
+  text-align: center;
+}
+
+input {
+  padding: 15px;
+  font-size: large;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+  border: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 10px;
+  font-size: x-large;
+}
+
+span {
+  color: red;
+  padding-left: 10px;
+  cursor: pointer;
+
+}
