@@ -1,0 +1,73 @@
+body {
+    background-color: #613c15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: monospace;
+  }
+  
+  form {
+    padding: 20px;
+  }
+  
+  h1 {
+    background-color: white;
+  }
+  
+  button {
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px;
+    font-size: large;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: orange;
+    font-size: large;
+  }
+  
+  .div {
+    background-color: #fff700;
+  }
+  
+  .data {
+    width: 25%;
+    margin-top: 50px;
+    background-color: rgba(224, 215, 48, 0.816);
+    text-align: center;
+    font-size: larger;
+  }
+  
+  img {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+  }
+  
+  .li1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+  }
+  
+  .stat-name {
+    text-align: left;
+  }
+  
+  .stat-value {
+    text-align: right;
+  }
+  
+  .ul2 li {
+    list-style: none;
+    text-align: center;
+  }
+  
