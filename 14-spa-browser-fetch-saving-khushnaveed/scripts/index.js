@@ -9,7 +9,7 @@ const client = new Client();
 
 const input = document.querySelector('input');
 const saveBtn = document.querySelector('.btn-save');
-const resetBtn = document.querySelector('btn-reset');
+const resetBtn = document.querySelector('.btn-reset');
 const movies = [];
 
 saveBtn.addEventListener('click', async () =>{
@@ -19,9 +19,16 @@ saveBtn.addEventListener('click', async () =>{
         alert("Please enter a movie title.");
         return;
     }
-    const movieData = client.getMovieData(movieName);
+    
+    const movieData = await client.getMovieData(movieName);
     console.log(movieData);
 
-    const displayData = client
+    view.displayMovieOnPage(movieData);
+    input.value = "";
+
+    resetBtn.addEventListener('click', () =>{
+        view.removeDisplay();
+    })
+    
     
 })
