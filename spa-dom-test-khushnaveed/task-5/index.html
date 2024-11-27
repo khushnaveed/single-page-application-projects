@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 5</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .message {
+        margin-top: 1.5rem;
+        padding: 1.5rem;
+      }
+
+      .success {
+        background-color: #4bb543;
+      }
+      .error {
+        background-color: tomato;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form id="registration-form">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+      <button>Submit</button>
+    </form>
+
+    <div class="message"></div>
+
+    <script>
+      const form = document.querySelector("form");
+      const email = document.querySelector("#email");
+      const pwd = document.querySelector("#password");
+      const divMsg = document.querySelector(".message");
+
+      form.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (e.target.tagName.toLowerCase() === "button") {
+          if (email.value && pwd.value) {
+            divMsg.classList = "success";
+            divMsg.textContent = "SUCCESS: registration complete.";
+            email.value = "";
+            pwd.value = "";
+          } else {
+            divMsg.classList = "error";
+            divMsg.textContent =
+              "ERROR: you have to insert both an e-mail and a password.";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

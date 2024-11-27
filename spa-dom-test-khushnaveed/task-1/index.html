@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 1</title>
+  </head>
+
+  <body>
+    <p id="text">Lorem ipsum...</p>
+    <button id="styler">Style</button>
+
+    <script>
+      const button = document.querySelector("button");
+      const p = document.querySelector("p");
+
+      button.addEventListener("click", () => {
+        p.style.color = "red";
+        p.style.fontFamily = "monospace";
+        p.style.fontSize = "4em";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task 4</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      .tasks {
+        list-style-type: none;
+        padding: 0;
+        max-width: 300px;
+      }
+
+      .tasks li {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        margin-bottom: 5px;
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .tasks li:hover {
+        background-color: #f7f7f7;
+      }
+
+      /* Add extra style for crossed out tasks to improve visibility */
+      .tasks li[style*="line-through"] {
+        color: #999;
+        background-color: #e9e9e9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>My ToDo List</h1>
+    <ul class="tasks">
+      <li>clean apartment</li>
+      <li>complete task 4</li>
+      <li>buy groceries</li>
+      <li>become a JavaScript expert</li>
+    </ul>
+
+    <script>
+      const ul = document.querySelector("ul");
+      ul.addEventListener("click", (e) => {
+        if (e.target.tagName.toLowerCase() === "li") {
+          e.target.style.textDecoration = "line-through";
+        }
+      });
+    </script>
+  </body>
+</html>
